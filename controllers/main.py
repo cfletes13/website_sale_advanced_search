@@ -29,7 +29,7 @@ class WebsiteSearch(http.Controller):
             extra_query = ''
             if product_as_category:
                 extra_query = " and id in {}"
-            limit = " limit 15"
+            limit = " limit 50"
             qry = sql + extra_query + limit
             product_list = []
             if len(product_as_category.ids) == 1:
